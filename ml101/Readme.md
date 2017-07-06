@@ -11,7 +11,7 @@ IBM Data Science Experience (DSX) is the premier offering that seamlessly allows
 
 DSX brings together the data science development experience accumulated in R, Python, Scala, and Java, intuitive data connectivity and processing capabilities of Spark, and the state-of-art dynamic visualization technology using Brunel, Pixiedust, and RStudio.
 
-# Step 1. Sign up to IBM Data Science Experience (DSX)
+## Step 1. Sign up to IBM Data Science Experience (DSX)
 
 1. Navigate to DSX landing page: [http://datascience.ibm.com/](http://datascience.ibm.com/)
 
@@ -25,16 +25,16 @@ DSX brings together the data science development experience accumulated in R, Py
 
 
 
-# Step 2. Perform Hands-on exercise
+## Step 2. Perform Hands-on exercise
 
-## [Exercise 1. Root Cause Analysis](https://github.com/edong186/ml/blob/master/ml101/lab1/)
-This lab exercise uses an IPython Notebook in DSX to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
+### [Exercise 1. Root Cause Analysis](https://github.com/edong186/ml/blob/master/ml101/lab1/)
+This lab exercise uses a notebook in DSX to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
 
-## [Exercise 2. Create Resolution](https://github.com/edong186/ml/blob/master/ml101/lab2/)
+### [Exercise 2. Create Resolution](https://github.com/edong186/ml/blob/master/ml101/lab2/)
 This lab we will explore how a data scientist utilizes DSX and IBM Bluemix cloud services to easily analyze data using machine learning techniques and to visualize the outcomes using DSX, R, and Brunel. For the lab, we have chosen two algorithms to demonstrate supervised and unsupervised machine learning in DSX. Decision tree-based classification is one of the domains that allowed scientists to have direct insights into the reasoning behind classification choices. Association rules algorithms support market basket analysis.
 
-## [Exercise 3. Collaboration]
+### [Exercise 3. Collaboration]
 
-## [Exercise 4. Model Builder]
+### [Exercise 4. Model Builder]
 
 
