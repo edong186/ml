@@ -1,6 +1,6 @@
-#Data Scientist 
-#Part 2 - Create Resolution..
-[<img src="https://github.com/ibmdataworks/datafirst/raw/master/datascientist/media/DSE2E2.png">](https://github.com/ibmdataworks/datafirst/tree/master/datascientist/machinelearning/)
+# Data Scientist 
+# Part 2 - Create Resolution..
+[<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E2.png">](https://github.com/edong186/ml/blob/master/ml101/part1/machinelearning/)
 
  In this lab we will explore how a data scientist utilizes DSX and IBM
  Bluemix cloud services to easily analyze data using machine learning
@@ -14,7 +14,7 @@
  The lab shows how to use these machine learning algorithms for
  uncovering the data insights in sales data.
 
-##Lab Components: DSX 
+## Lab Components: DSX 
 
 1.  **Source Data Repository**: **Object Storage Service**
 > NOTE: This usually is the data hosted in a secure enterprise
