@@ -1,4 +1,4 @@
-# ML 101 
+
 # Exercise 2 - Create Resolution
 [<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E2.png">](https://github.com/edong186/ml/blob/master/ml101/lab2/)
 
@@ -28,15 +28,15 @@
 
     a.  **Using Decision Tree**: **DSX Notebooks**, **Brunel**, **R** 
     
-    [<img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Decision-Tree-Lab-Flow.jpg">]
+    <img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Decision-Tree-Lab-Flow.jpg">
     
     
     b.  **Using Association Rules**: **DSX RStudio** 
     
-    [<img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Association-Rules-Lab-Flow.jpg">]
+    <img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Association-Rules-Lab-Flow.jpg">
     
 
-##Before you start. Get on DSX, Download Files. 
+## Before you start. Get on DSX, Download Files. 
 
 1.  Download Lab-DSX-ML.zip archive from the github.com location below and extract the data file (transactions.csv) to your laptop:
 
@@ -57,8 +57,7 @@
         -   RStudio-apriori-demo-installation.R – R code for installing software packages for the machine learning lab (association rules)
 
 2.  Login to your IBM DSX account at:  <http://datascience.ibm.com/>
-> NOTE: If you don’t have a DSX account then get started by [following these directions](https://github.com/edong186/ml/tree/master/datascientist#step-1-get-on-ibm-data-science-experience-dsx)
->
+
 3.  A quick outline of the procedures:
 
     a.  Decision tree lab (based on the DSX notebooks):
@@ -109,7 +108,7 @@
 ## Decision Tree
 # Step 1. Preparing a Project 
 
-Please use a default project for this lab:
+Use the Default Project for this lab:
 
 1. From DSX, select DSX data science context (the button to click on is highlighted with the red rectangle): ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/DSX-domain-button-highlighted.png)
 
