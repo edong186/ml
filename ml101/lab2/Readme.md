@@ -119,7 +119,7 @@
 
 1.  Click "add notebooks"
 
-2.  On the “Create Notebook” page, switch to “From File” tab, name the notebook “ML Lab Installation”, and choose the notebook file on your disk from the archive: ml-lab-installation.ipynb; alternatively you can switch to “From  URL” tab and use the following “Notebook URL”:
+2.  On the “Create Notebook” page, switch to “From File” tab, name the notebook “Mml-lab-installation”, and choose the notebook file on your disk from the archive: ml-lab-installation.ipynb; alternatively you can switch to “From  URL” tab and use the following “Notebook URL”:
 > https://github.com/edong186/ml/blob/master/ml101/lab2/labs/ml-lab-installation.ipynb
 
  >NOTE: you can get to this page from the home page of DSX by clicking on "Start", please choose the default pre-filled values in the fields (Project: Default project, Spark Service: the service that you provisioned for this lab)
@@ -130,24 +130,22 @@
 
 5. Return back to the project overview page (or DSX home page)
 
-6. Load the second notebook “Machine Learning with DSX - Lab” (from the file machine-learning-with-DSX-lab.ipynb, or from URL https://github.com/edong186/ml/blob/master/ml101/lab2/labs/machine-learning-with-DSX-lab.ipynb ) by following the same steps 1-5 as above
+6. Load the second notebook “machine-learning-with-DSX-lab” (from the file machine-learning-with-DSX-lab.ipynb, or from URL https://github.com/edong186/ml/blob/master/ml101/lab2/labs/machine-learning-with-DSX-lab.ipynb ) by following the same steps 1-5 as above
 
 ## Step 3. Inserting code
 
-1.  From the loaded notebook “Machine Learning with DSX Lab” click on "Find and add data": ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Selecting-Data-Sources.jpg)
+1.  From the loaded notebook “machine-learning-with-DSX-lab” click on "Find and Add data" (1001 icon): ![]
 
-2.  The expanded "Find and add data" would show transactions.csv under “Files” section
+2.  The expanded "Find and add Aata" would show transactions.csv under “Files” section
 
-3.  Identify the cell with the implementation of getObjectStorageFileWithCredentials and replace the code to use your provisioned Object Storage service:
+3.  Identify the cell with the implementation of getObjectStorageFileWithCredentials and replace the code to use your Object Storage service:
 
     a.  Place your cursor to the cell with the default getObjectStorageFileWithCredentials implementation
     b.  Create an empty code cell just above the code cell with the default getObjectStorageFileWithCredentials by clicking on the following menu items: “Insert” &gt; “Insert Cell Above” and place your cursor into the new cell
 
     ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Replacing-the-object-storage-service-inserting-cell.jpg)
 
-    c.  Clicking on “Insert to code” on Transactions.csv will show the options to insert the code: choose “insert base DataFrame” :
-
- ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Inserting-code-into-notebook.jpg)
+    c.  Clicking on “Insert to code” on Transactions.csv will show the options to insert the code: choose “insert R DataFrame” 
 
     d.  Here is a similar code that will be inserted into your new cell: ![](https://github.com/ibmdataworks/datafirst/blob/masterml101/lab2/doc/media/Replacing-the-object-storage-service-the-code-inserted.jpg)
 
@@ -165,7 +163,7 @@
 
 ## Step 6. Installing Software Libraries and Packages
 
-1.  Open “ML Lab Installation” notebook by clicking on the name of the notebook
+1.  Open “ml-lab-installation” notebook in the Edit mode
 
 2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Execute-section.png) or by using the menu Cell&gt; Run Cells
 
@@ -179,11 +177,9 @@
 
 ## Step 6. Running Decision Tree Lab 
 
-1.  From the DSX home page go to “Machine Learning with DSX - Lab” in “My Recent Notebooks” section
+1.  Open “machine-learning-with-DSX-lab” notebook in the Edit Mode
 
-2.  Open “Machine Learning with DSX - Lab” notebook in the list by clicking on the name of the notebook
-
-3.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Execute-section.png) or by using the menu Cell&gt; Run Cells. The lab covers the following actions:
+2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Execute-section.png) or by using the menu Cell&gt; Run Cells. The lab covers the following actions:
 
     a.  Declaring the libraries used in the lab
 
@@ -201,15 +197,14 @@
 
     h.  Showing the native R visualization of the decision tree for comparison
 
-4.  \[Optional step\] Clean-up the output of all sections to prepare the lab for the next user: click on Cell&gt;All Output&gt;Clear
+3.  \[Optional step\] Clean-up the output of all sections to prepare the lab for the next user: click on Cell&gt;All Output&gt;Clear
 
-5.  Stop the kernel (File &gt; Stop Kernel) and go back to the project overview page or DSX home page
 
-##End of Decision Tree
+## End of Decision Tree
 
-##Start Association Rules
+# Start Association Rules
 
-#Step 7. Association Rules Lab Installation
+## Step 7. Association Rules Lab Installation
 
 1.  Select DSX data science context (please use the highlighted item to get to this menu):
 ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/DSX-domain-button-highlighted.png)
