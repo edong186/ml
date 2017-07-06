@@ -1,4 +1,4 @@
-# Data Scientist 
+# ML 101 
 # Exercise 2 - Create Resolution
 [<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E2.png">](https://github.com/edong186/ml/blob/master/ml101/lab2/)
 
@@ -27,20 +27,20 @@
 2.  **Exploring sales data** (for this lab, the data from IBM sample DB “GOSALES” was used):
 
     a.  **Using Decision Tree**: **DSX Notebooks**, **Brunel**, **R** 
+    
     [<img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Decision-Tree-Lab-Flow.jpg">]
     
-    ![Decision Tree Lab Flow] (https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Decision-Tree-Lab-Flow.jpg "Decision Tree Lab Flow")
-
+    
     b.  **Using Association Rules**: **DSX RStudio** 
     
-    ![Association Rules Lab Flow] (https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Association-Rules-Lab-Flow.jpg "Association Rules Lab Flow")
-
+    [<img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Association-Rules-Lab-Flow.jpg">]
+    
 
 ##Before you start. Get on DSX, Download Files. 
 
 1.  Download Lab-DSX-ML.zip archive from the github.com location below and extract the data file (transactions.csv) to your laptop:
 
-    > <https://github.com/ibmdataworks/edong186/ml/tree/master/ml101/lab2/archive>
+    > <https://github.com/edong186/ml/tree/master/ml101/lab2/archive>
     
     Here is the content of the downloaded archive:
     
@@ -57,7 +57,7 @@
         -   RStudio-apriori-demo-installation.R – R code for installing software packages for the machine learning lab (association rules)
 
 2.  Login to your IBM DSX account at:  <http://datascience.ibm.com/>
-> NOTE: If you don’t have a DSX account then get started by [following these directions](https://github.com/ibmdataworks/datafirst/tree/master/datascientist#step-1-get-on-ibm-data-science-experience-dsx)
+> NOTE: If you don’t have a DSX account then get started by [following these directions](https://github.com/edong186/ml/tree/master/datascientist#step-1-get-on-ibm-data-science-experience-dsx)
 >
 3.  A quick outline of the procedures:
 
@@ -106,74 +106,8 @@
 > submenu list, and finally “Final Item” in the yet another opened menu
 > list.
 
-##Decision Tree
-#Step 1. Decision Tree Lab Installation
-
-###Initializing Source Data Repository: Object Storage Service
-
-Use the Object Storage Service that is created for your account. You can
-alternatively create a new Object Storage Service by following these
-instructions:
-
-1.  In DSX, go to user profile settings ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/User-Profile-in-DSX.png)
-
-2.  Go to manage Bluemix account ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Manage-bluemix-account.png)
-
-3.  From the Bluemix dashboard catalog menu search for “Object Storage”
-
-4.  Click on the Object Storage Icon ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/ObjectStorage.png)
-
-5.  Choose the default pre-filled values in the fields (optionally rename the “Service name:” to DS\_DSX\_ML\_ObjectStorage), select the “Free Pricing Plan” and click “Create” at the bottom of the page.
-
-6.  Click on “Actions-&gt;Add Container” and enter “notebooks" as the container name.
-> NOTE: Once a new container is created, you get this message "There are
-> no files in the container you selected. Add files or view Object
-> Storage documentation."
-
-7.  Click on “Add files”.
-
-8.  Select and add the files previously downloaded (transactions.csv) to this Container.
-> NOTE: Your data files are now moved to the Object Storage into the
-> Bluemix.
-
-#Step 2. Initializing Apache Spark: Apache Spark Service
-
-Use the Apache Spark Service that is created for your account. You can
-alternatively create a new Apache Spark Service by following these
-instructions (if you are already in the UI managing Bluemix account,
-please start from the step 3):
-
-1.  In DSX, go to user profile settings ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/User-Profile-in-DSX.png)
-
-2.  Go to manage Bluemix account ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Manage-bluemix-account.png)
-
-3.  From the Bluemix dashboard catalog menu search for “Apache Spark”
-
-4.  Click on the Apache Spark Service Icon ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/apache-spark-service.png)
-
-5.  Choose the default pre-filled values in the fields (optionally rename the “Service name:” to DS\_DSX\_ML\_Spark), select the needed  “Pricing Plan” and click “Create” at the bottom of the page.
-
-6.  Ensure that your service is up and running – the page that you are transferred after creating the service shows the status of the service (this is highlighted with the red rectangle) ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Bluemix-verifying-that-the-service-is-running.jpg)
-
-7.  Connect your Apache Spark service to your Object Storage service:
-
-    a.  Click on “NOTEBOOKS” button (it is highlighted in the green rectangle on the previous snapshot)
-
-    b.  Click on Object Storage tab (it is highlighted with the red rectangle): ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Bluemix-connecting-spark-to-object-storage.jpg)
-
-    c.  Click on “Add Object Storage”: ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Bluemix-connecting-spark-to-object-storage-adding-storage.jpg)
-
-    d.  In the new screen, switch to Bluemix and select the Object Storage service and the container that you provisioned for this lab: ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Bluemix-connecting-spark-to-object-storage-confirming.jpg)
-
-    e.  Click on “Select”: the provisioning of Apache Spark Service for DSX has been finished
-
-8.  Switch back to the tab with DSX in your browser
-
-> NOTE: a more detailed instructions or alternative approaches on
-> setting up an Apache Spark service can be found at
-> <https://console.ng.bluemix.net/docs/services/AnalyticsforApacheSpark/index.html>
-
-#Step 3. Preparing a Project 
+## Decision Tree
+# Step 1. Preparing a Project 
 
 Please use a default project for this lab:
 
