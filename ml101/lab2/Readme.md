@@ -14,7 +14,7 @@
  The lab shows how to use these machine learning algorithms for
  uncovering the data insights in sales data.
 
-## Lab Components: DSX 
+## Overview
 
 1.  **Source Data Repository**: **Object Storage Service**
 > NOTE: This usually is the data hosted in a secure enterprise
@@ -36,7 +36,7 @@
     <img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Association-Rules-Lab-Flow.jpg">
     
 
-## Before you start. Get on DSX, Download Files. 
+## Lab environment setup 
 
 1.  Download Lab-DSX-ML.zip archive from the github.com location below and extract the data file (transactions.csv) to your laptop:
 
@@ -105,15 +105,17 @@
 > submenu list, and finally “Final Item” in the yet another opened menu
 > list.
 
-## Decision Tree
-# Step 1. Adding a data asset
+
+# Decision Tree
+
+## Step 1. Adding a data asset
 
 1. Open the Default Project
 
 2. Click "add data assets", and add "tranactions.csv" to the assets of the project.
 > Note: File "tranactions.csv" is located at "Lab-DSX-ML\data"
 
-# Step 2. Importing notebooks
+## Step 2. Importing notebooks
 
 1.  Click "add notebooks"
 
@@ -124,66 +126,64 @@
 
 3. Click on Create Notebook
 
-4.  Save the current state by clicking on File &gt; Save Version from the menu
+4. Save the current state by clicking on File &gt; Save Version from the menu
 
-5.  Return back to the project overview page (or DSX home page)
+5. Return back to the project overview page (or DSX home page)
 
-6.  Load the second notebook “Machine Learning with DSX - Lab” (from the file machine-learning-with-DSX-lab.ipynb, or from URL https://github.com/edong186/ml/blob/master/ml101/lab2/labs/machine-learning-with-DSX-lab.ipynb ) by following the same steps 1-5 as above
+6. Load the second notebook “Machine Learning with DSX - Lab” (from the file machine-learning-with-DSX-lab.ipynb, or from URL https://github.com/edong186/ml/blob/master/ml101/lab2/labs/machine-learning-with-DSX-lab.ipynb ) by following the same steps 1-5 as above
 
-#Step 3. Switch to the Provisioned Source Data Repository in DSX Lab Notebook
+## Step 3. Inserting code
 
-1.  From the loaded notebook “Machine Learning with DSX Lab” click on "Find and add data": ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Selecting-Data-Sources.jpg)
+1.  From the loaded notebook “Machine Learning with DSX Lab” click on "Find and add data": ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Selecting-Data-Sources.jpg)
 
-2.  The expanded "Find and add data" would show transact.csv under “Files” section
+2.  The expanded "Find and add data" would show transactions.csv under “Files” section
 
 3.  Identify the cell with the implementation of getObjectStorageFileWithCredentials and replace the code to use your provisioned Object Storage service:
 
     a.  Place your cursor to the cell with the default getObjectStorageFileWithCredentials implementation
     b.  Create an empty code cell just above the code cell with the default getObjectStorageFileWithCredentials by clicking on the following menu items: “Insert” &gt; “Insert Cell Above” and place your cursor into the new cell
 
-    ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Replacing-the-object-storage-service-inserting-cell.jpg)
+    ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Replacing-the-object-storage-service-inserting-cell.jpg)
 
     c.  Clicking on “Insert to code” on Transactions.csv will show the options to insert the code: choose “insert base DataFrame” :
 
- ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Inserting-code-into-notebook.jpg)
+ ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Inserting-code-into-notebook.jpg)
 
-    d.  Here is a similar code that will be inserted into your new cell: ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Replacing-the-object-storage-service-the-code-inserted.jpg)
+    d.  Here is a similar code that will be inserted into your new cell: ![](https://github.com/ibmdataworks/datafirst/blob/masterml101/lab2/doc/media/Replacing-the-object-storage-service-the-code-inserted.jpg)
 
     e.  Replace the existing implementation of getObjectStorageFileWithCredentials (starts with “&lt;- function” and finishes with the end of block “}”) with the generated code in the new cell for getObjectStorageFileWithCredentials\_&lt;unique sequence&gt;; Here is the example of the highlighted code that needs to be replaced:
      ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Replacing-the-object-storage-service-highlighted-code.jpg)
 
      Take the new code (highlighted with the green rectangle) and place instead of the old code (highlighted with the red rectangle):
 
-     ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Replacing-the-object-storage-service-code-replacement.jpg)
+     ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Replacing-the-object-storage-service-code-replacement.jpg)
 
     f.  Remove the cell with the newly generated code after replacing the default implementation of getObjectStorageFileWithCredentials
 
     g.  Check point: after the modifications, the section code should still define a data frame variable df which is used in the notebook; the modifications should be done only for replacing  getObjectStorageFileWithCredentials with the newly generated code for the new Object Storage service
 
 
-#Step 6. Installing Software Libraries and Packages
+## Step 6. Installing Software Libraries and Packages
 
-1.  From the DSX home page go to “ML Lab Installation” in “My Recent Notebooks” section
+1.  Open “ML Lab Installation” notebook by clicking on the name of the notebook
 
-2.  Open “ML Lab Installation” notebook by clicking on the name of the notebook
+2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Execute-section.png) or by using the menu Cell&gt; Run Cells
 
-3.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Execute-section.png) or by using the menu Cell&gt; Run Cells
+3.  Ensure that there are no installation failures before proceeding to the lab
 
-4.  Ensure that there are no installation failures before proceeding to the lab
-
-5.  Stop the kernel (File &gt; Stop Kernel) and go back to the list of notebooks in the default project by navigating to the side bar menu Projects > Default Project:
-![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/DSX-side-toolbar.jpg)
+4.  Stop the kernel (File &gt; Stop Kernel) and go back to the list of notebooks in the default project by navigating to the side bar menu Projects > Default Project:
+![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/DSX-side-toolbar.jpg)
 
 >NOTE: the software packages installation may take a few minutes, but it
 >needs to be done only once per account
 
-#Step 6. Running Decision Tree Lab 
+## Step 6. Running Decision Tree Lab 
 
 1.  From the DSX home page go to “Machine Learning with DSX - Lab” in “My Recent Notebooks” section
 
 2.  Open “Machine Learning with DSX - Lab” notebook in the list by clicking on the name of the notebook
 
-3.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Execute-section.png) or by using the menu Cell&gt; Run Cells. The lab covers the following actions:
+3.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Execute-section.png) or by using the menu Cell&gt; Run Cells. The lab covers the following actions:
 
     a.  Declaring the libraries used in the lab
 
@@ -212,17 +212,17 @@
 #Step 7. Association Rules Lab Installation
 
 1.  Select DSX data science context (please use the highlighted item to get to this menu):
-![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/DSX-domain-button-highlighted.png)
+![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/DSX-domain-button-highlighted.png)
 
-2.  Click on the menu icon ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Left-bar-menu-button.png) on the home page of DSX in Data Science context
+2.  Click on the menu icon ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Left-bar-menu-button.png) on the home page of DSX in Data Science context
 
 3.  Select RStudio in the open tool bar: RStudio session starts
-![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/DSX-side-toolbar.jpg)
+![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/DSX-side-toolbar.jpg)
 
 #Step 8. Importing Source Code and Data for Machine Learning Lab in RStudio
 
 1.  In “Files” tab use “New folder” to create 2 folders in the user’s home directory - data and demo (please do not mix it with the “File” menu item in the main menu and locate “Files” in the frame depicted here):
-> ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/RStudio-Files-tab.jpg)
+> ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-Files-tab.jpg)
 
 2.  Using “Upload” button upload transactions.csv into the data folder and RStudio-apriori-demo-installation.R, RStudio-apriori-demo.R into the demo folder
 
@@ -230,26 +230,26 @@
 #Step 9. Installing Software Libraries and Packages
 
 1.  Double-click on the name of the file RStudio-apriori-demo-installation.R: RStudio will open the source code:
- > ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/RStudio-Source-code.jpg)
+ > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-Source-code.jpg)
 
 2.  Rename ~/.Rprofile to ~/old.Rprofile: check the file .Rprofile and click "Rename", change the name to old.Rprofile
- > ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Renaming-rprofile.png)
+ > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Renaming-rprofile.png)
 
 3.  Quit the current session and start the new one:
 
     a. Select Session>Quit Session:
     
- > ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Session-menu.png)
+ > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Session-menu.png)
  
     b. Select "Don't Save": 
     
- > ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Quitting-R-session.png)
+ > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Quitting-R-session.png)
 
     c. After the old session has been finished, start a new session:
     
- > ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Starting-a-new-R-session.png)
+ > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Starting-a-new-R-session.png)
     
-4.  Run the code in RStudio-apriori-demo-installation.R using the Run button ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/RStudio-running-source-code.png): please decline the options to update any packages while installing the new packages
+4.  Run the code in RStudio-apriori-demo-installation.R using the Run button ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-running-source-code.png): please decline the options to update any packages while installing the new packages
 
 5.  Check point: ensure that all packages install without errors
 
@@ -265,7 +265,7 @@
 
 1.  Click on the name of the file RStudio-apriori-demo.R: RStudio will open the source code
 
-2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/RStudio-running-source-code.png) . The lab covers the following actions:
+2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-running-source-code.png) . The lab covers the following actions:
 
     a.  Declaring the libraries used in the lab
 
