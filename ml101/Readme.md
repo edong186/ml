@@ -1,5 +1,6 @@
+# Machine Learning 101
 
-# Hands on Lab - Data Scientist
+# Hands on Lab 
 [<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E.png">](https://github.com/edong186/ml/blob/master/ml101)
 
 As a Data Scientist, you have to turn raw data into meaning using state-of-the-art techniques leveraging open source and enterprise applications. Perform hands-on exercises leveraging Apache Spark, Jupyter, Python, and R to derive sales performance for a specific product line, then build an advanced Machine Learning model in R.
