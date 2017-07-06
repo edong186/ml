@@ -1,10 +1,10 @@
 
-#Hands on Lab - Data Scientist.
+# Hands on Lab - Data Scientist.
 [<img src="https://github.com/ibmdataworks/datafirst/raw/master/datascientist/media/DSE2E.png">](https://github.com/ibmdataworks/datafirst/tree/master/datascientist)
 
 As a Data Scientist, you have to turn raw data into meaning using state-of-the-art techniques leveraging open source and enterprise applications. Perform hands-on exercises leveraging Apache Spark, Jupyter, Python, and R to derive sales performance for a specific product line, then build an advanced Machine Learning model in R.
 
-##Welcome to IBM Data Science Experience (DSX) - datascience.ibm.com
+## Welcome to IBM Data Science Experience (DSX) - datascience.ibm.com
 
 IBM Data Science Experience (DSX) is the premier offering that seamlessly allows data scientists and data engineers to connect data from multiple domains, to analyze it, and visually to explore the data for insights. The solutions that were not possible previously or required months of development effort can now be done in DSX in a very fast and intuitive manner.
 
@@ -12,8 +12,8 @@ R has become the de-facto standard in the domain of data science: it supports mu
 
 DSX brings together the data science development experience accumulated in R, Python, Scala, and Java, intuitive data connectivity and processing capabilities of Spark, and the state-of-art dynamic visualization technology using Brunel, Pixiedust, and RStudio.
 
-#Step 1. Get on IBM Data Science Experience (DSX).
-##Create a BlueMix Account.
+# Step 1. Get on IBM Data Science Experience (DSX).
+## Create a BlueMix Account.
 A Bluemix ID is needed to log into DSX, If you have a Bluemix account, skip part to create bluemix ID.
 
 1.  Go to [www.bluemix.net](https://www.bluemix.net)
@@ -34,7 +34,7 @@ A Bluemix ID is needed to log into DSX, If you have a Bluemix account, skip part
 
  > <img src="https://github.com/ibmdataworks/datafirst/blob/master/appdeveloper/media/image5.png" width="396" height="330" />
 
-##Log into Data Science Experience (DSX).
+## Log into Data Science Experience (DSX).
 
 1. Goto [http://datascience.ibm.com/](http://datascience.ibm.com/)
 
@@ -46,7 +46,7 @@ A Bluemix ID is needed to log into DSX, If you have a Bluemix account, skip part
 
  > <img src="https://github.com/ibmdataworks/datafirst/blob/master/datascientist/media/DSX%20Landing.png">
 
-#Step 2. Perform Hands on Exercises.
+# Step 2. Perform Hands on Exercises.
 
 ##[Part 1. Root Cause Analysis (Interactive Analytics) Start Here](https://github.com/ibmdataworks/datafirst/raw/master/datascientist/interactive-analytics/)
 This lab exercise uses an IPython Notebook in DSX to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
