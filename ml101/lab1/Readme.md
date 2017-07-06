@@ -2,13 +2,13 @@
 
 # Exercise 1 - Root Cause Analysis
 
-[<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E1.png">](https://github.com/edong186/ml/blob/master/ml101/part1/)
+[<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E1.png">](https://github.com/edong186/ml/blob/master/ml101/lab1/)
 
 This lab exercise uses a notebook in Data Science Experience to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
 
 # Overview
 
-[<img src="https://github.com/edong186/ml/blob/master/ml101/part1/media/overview.gif">](https://github.com/edong186/ml/blob/master/ml101/part1/media/overview.gif)
+[<img src="https://github.com/edong186/ml/blob/master/ml101/lab1/media/overview.gif">](https://github.com/edong186/ml/blob/master/ml101/lab1/media/overview.gif)
 
 
 # Step 1. Login to DSX
@@ -16,7 +16,7 @@ This lab exercise uses a notebook in Data Science Experience to connect with das
 # Step 3. Add a notebook from URL
 
 - Notebook name: DSX_IA_Lab
-- Notebook URL: https://raw.githubusercontent.com/edong186/ml/master/ml101/part1/DSX_IA_Lab.ipynb
+- Notebook URL: https://raw.githubusercontent.com/edong186/ml/master/ml101/lab1/DSX_IA_Lab.ipynb
 - Default Spark instance "DSX-Spark"
 
 # Step 4. Run the notebook
@@ -27,4 +27,4 @@ This lab exercise uses a notebook in Data Science Experience to connect with das
 
 --- 
 
-##### [Next Steps: Create Resolution](https://github.com/edong186/ml/blob/master/ml101/part2)
+### [Next Steps: Create Resolution](https://github.com/edong186/ml/blob/master/ml101/lab2)
