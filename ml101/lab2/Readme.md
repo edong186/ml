@@ -203,15 +203,10 @@
 
 ## Step 7. Association Rules Lab Installation
 
-1.  Select DSX data science context (please use the highlighted item to get to this menu):
-![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/DSX-domain-button-highlighted.png)
+1. On the DSX home page, navigate to Tools > RStudio
 
-2.  Click on the menu icon ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Left-bar-menu-button.png) on the home page of DSX in Data Science context
 
-3.  Select RStudio in the open tool bar: RStudio session starts
-![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/DSX-side-toolbar.jpg)
-
-#Step 8. Importing Source Code and Data for Machine Learning Lab in RStudio
+## Step 8. Importing Source Code and Data for Machine Learning Lab in RStudio
 
 1.  In “Files” tab use “New folder” to create 2 folders in the user’s home directory - data and demo (please do not mix it with the “File” menu item in the main menu and locate “Files” in the frame depicted here):
 > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-Files-tab.jpg)
@@ -219,7 +214,7 @@
 2.  Using “Upload” button upload transactions.csv into the data folder and RStudio-apriori-demo-installation.R, RStudio-apriori-demo.R into the demo folder
 
 
-#Step 9. Installing Software Libraries and Packages
+## Step 9. Installing Software Libraries and Packages
 
 1.  Double-click on the name of the file RStudio-apriori-demo-installation.R: RStudio will open the source code:
  > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-Source-code.jpg)
