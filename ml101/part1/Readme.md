@@ -2,7 +2,7 @@
 
 # Part 1 - Root Cause Analysis
 
-[<img src="https://github.com/ibmdataworks/datafirst/raw/master/datascientist/media/DSE2E1.png">](https://github.com/ibmdataworks/datafirst/tree/master/datascientist/interactive-analytics/)
+[<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E1.png">](https://github.com/edong186/ml/blob/master/ml101/part1/)
 
 This lab exercise uses an IPython Notebook in Data Science Experience to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
 
@@ -13,9 +13,9 @@ This lab exercise uses an IPython Notebook in Data Science Experience to connect
 
 1. At the top of the screen click the plus-sign icon to create a notebook.
 
-<img src="https://github.com/ibmdataworks/datafirst/raw/master/datascientist/interactive-analytics/media/createnew.png" width="250"> 
+<img src="https://github.com/edong186/ml/blob/master/ml101/part1/media/createnew.png" width="250"> 
  
-2. Type ‘IA_Lab_Notebook’ as Notebook name, click on ‘from URL’ link and specify:  https://raw.githubusercontent.com/ibmdataworks/datafirst/master/datascientist/interactive-analytics/DSX_IA_Lab.ipynb
+2. Type ‘IA_Lab_Notebook’ as Notebook name, click on ‘from URL’ link and specify:  https://raw.githubusercontent.com/edong186/ml/master/ml101/part1/DSX_IA_Lab.ipynb
 
  ![start notebook](https://github.com/ibmdataworks/datafirst/raw/master/datascientist/interactive-analytics/media/createNotebook.gif)
 
