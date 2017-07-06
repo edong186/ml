@@ -1,4 +1,4 @@
-[<img src="https://github.com/ibmdataworks/datafirst/raw/master/datascientist/media/EventHeader.png">](https://github.com/ibmdataworks/datafirst/)
+
 #Hands on Lab - Data Scientist.
 [<img src="https://github.com/ibmdataworks/datafirst/raw/master/datascientist/media/DSE2E.png">](https://github.com/ibmdataworks/datafirst/tree/master/datascientist)
 
