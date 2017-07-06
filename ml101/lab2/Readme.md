@@ -147,7 +147,7 @@
 
     c.  Clicking on “Insert to code” on Transactions.csv will show the options to insert the code: choose “insert R DataFrame” 
 
-    d.  Here is a similar code that will be inserted into your new cell: ![](https://github.com/edong186/ml/blob/masterml101/lab2/doc/media/Replacing-the-object-storage-service-the-code-inserted.jpg)
+    d.  Here is a similar code that will be inserted into your new cell: ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Replacing-the-object-storage-service-the-code-inserted.jpg)
 
     e.  Replace the existing implementation of getObjectStorageFileWithCredentials (starts with “&lt;- function” and finishes with the end of block “}”) with the generated code in the new cell for getObjectStorageFileWithCredentials\_&lt;unique sequence&gt;; Here is the example of the highlighted code that needs to be replaced:
      ![](https://github.com/ibmdataworks/datafirst/blob/master/datascientist/machinelearning/doc/media/Replacing-the-object-storage-service-highlighted-code.jpg)
