@@ -27,6 +27,7 @@
 2.  **Exploring sales data** (for this lab, the data from IBM sample DB “GOSALES” was used):
 
     a.  **Using Decision Tree**: **DSX Notebooks**, **Brunel**, **R** 
+    [<img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Decision-Tree-Lab-Flow.jpg">]
     
     ![Decision Tree Lab Flow] (https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Decision-Tree-Lab-Flow.jpg "Decision Tree Lab Flow")
 
