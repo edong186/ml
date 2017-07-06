@@ -1,6 +1,6 @@
 # Data Scientist 
-# Part 2 - Create Resolution..
-[<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E2.png">](https://github.com/edong186/ml/blob/master/ml101/part1/machinelearning/)
+# Exercise 2 - Create Resolution
+[<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E2.png">](https://github.com/edong186/ml/blob/master/ml101/lab2/)
 
  In this lab we will explore how a data scientist utilizes DSX and IBM
  Bluemix cloud services to easily analyze data using machine learning
@@ -28,18 +28,18 @@
 
     a.  **Using Decision Tree**: **DSX Notebooks**, **Brunel**, **R** 
     
-    ![Decision Tree Lab Flow] (https://raw.githubusercontent.com/ibmdataworks/datafirst/master/datascientist/machinelearning/doc/media/Decision-Tree-Lab-Flow.jpg "Decision Tree Lab Flow")
+    ![Decision Tree Lab Flow] (https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Decision-Tree-Lab-Flow.jpg "Decision Tree Lab Flow")
 
     b.  **Using Association Rules**: **DSX RStudio** 
     
-    ![Association Rules Lab Flow] (https://raw.githubusercontent.com/ibmdataworks/datafirst/master/datascientist/machinelearning/doc/media/Association-Rules-Lab-Flow.jpg "Association Rules Lab Flow")
+    ![Association Rules Lab Flow] (https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Association-Rules-Lab-Flow.jpg "Association Rules Lab Flow")
 
 
 ##Before you start. Get on DSX, Download Files. 
 
 1.  Download Lab-DSX-ML.zip archive from the github.com location below and extract the data file (transactions.csv) to your laptop:
 
-    > <https://github.com/ibmdataworks/datafirst/tree/master/datascientist/machinelearning/archive>
+    > <https://github.com/ibmdataworks/edong186/ml/tree/master/ml101/lab2/archive>
     
     Here is the content of the downloaded archive:
     
