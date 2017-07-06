@@ -1,6 +1,6 @@
 
 # Hands on Lab - Data Scientist
-[<img src="https://github.com/ibmdataworks/datafirst/raw/master/datascientist/media/DSE2E.png">](https://github.com/ibmdataworks/datafirst/tree/master/datascientist)
+[<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E.png">](https://github.com/edong186/ml/blob/master/ml101)
 
 As a Data Scientist, you have to turn raw data into meaning using state-of-the-art techniques leveraging open source and enterprise applications. Perform hands-on exercises leveraging Apache Spark, Jupyter, Python, and R to derive sales performance for a specific product line, then build an advanced Machine Learning model in R.
 
@@ -27,10 +27,10 @@ DSX brings together the data science development experience accumulated in R, Py
 
 # Step 2. Perform Hands-on exercise
 
-## [Part 1. Root Cause Analysis](https://github.com/edong186/ml/blob/master/ml101/interactive-analytics/)
+## [Part 1. Root Cause Analysis](https://github.com/edong186/ml/blob/master/ml101/part1/)
 This lab exercise uses an IPython Notebook in DSX to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
 
-## [Part 2. Create Resolution](https://github.com/edong186/ml/blob/master/ml101/machinelearning/)
+## [Part 2. Create Resolution](https://github.com/edong186/ml/blob/master/ml101/part2/)
 This lab we will explore how a data scientist utilizes DSX and IBM Bluemix cloud services to easily analyze data using machine learning techniques and to visualize the outcomes using DSX, R, and Brunel. For the lab, we have chosen two algorithms to demonstrate supervised and unsupervised machine learning in DSX. Decision tree-based classification is one of the domains that allowed scientists to have direct insights into the reasoning behind classification choices. Association rules algorithms support market basket analysis.
 
 
