@@ -7,21 +7,21 @@ As a Data Scientist, you have to turn raw data into meaning using state-of-the-a
 
 ## IBM Data Science Experience (DSX) - datascience.ibm.com
 
-*IBM Data Science Experience (DSX)* is the premier offering that seamlessly allows data scientists and data engineers to connect data from multiple domains, to analyze it, and visually to explore the data for insights. The solutions that were not possible previously or required months of development effort can now be done in DSX in a very fast and intuitive manner.
-
-R has become the de-facto standard in the domain of data science: it supports multiple machine learning algorithms and ability to visualize the outcomes of the research.
+IBM Data Science Experience (DSX) is the premier offering that seamlessly allows data scientists and data engineers to connect data from multiple domains, to analyze it, and visually to explore the data for insights. The solutions that were not possible previously or required months of development effort can now be done in DSX in a very fast and intuitive manner.
 
 DSX brings together the data science development experience accumulated in R, Python, Scala, and Java, intuitive data connectivity and processing capabilities of Spark, and the state-of-art dynamic visualization technology using Brunel, Pixiedust, and RStudio.
 
 # Step 1. Sign up to IBM Data Science Experience (DSX)
 
-1. Goto [http://datascience.ibm.com/](http://datascience.ibm.com/)
+1. Navigate to DSX landing page: [http://datascience.ibm.com/](http://datascience.ibm.com/)
 
-2. Click the Log In button on the DSX landing page to sign in with your Bluemix credentials. Type in your Bluemix email address and password, then click Sign In.
+2. Sign Up. The Sign-up procedure will guide you through:
 
- > <img src="https://github.com/ibmdataworks/datafirst/raw/master/datascientist/media/DSX Sign On.png">
-
- > You are now in the Data Science Experience. Depending on the plan you chose, your environment is automatically set up with at least one Apache Spark instance and at least 5 GB of object storage. From here you can create a new project, notebook, or connection. You can also explore any of the tutorials, videos, sample notebooks or articles in the community.
+- Creating an IBMid (if you don't have one)
+- Registering to Bluemix
+- Registering to DSX
+ 
+ > Once you are signed up to the Data Science Experience, your environment is automatically set up with one Apache Spark instance and at least 5 GB of object storage. From here you can create a new project, notebook, or connection. You can also explore any of the tutorials, videos, sample notebooks or articles in the community.
 
  > <img src="https://github.com/ibmdataworks/datafirst/blob/master/datascientist/media/DSX%20Landing.png">
 
