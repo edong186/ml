@@ -6,6 +6,8 @@
 
 This lab exercise uses a notebook in Data Science Experience to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
 
+# Overview
+
 [<img src="https://github.com/edong186/ml/blob/master/ml101/part1/media/overview.gif">](https://github.com/edong186/ml/blob/master/ml101/part1/media/overview.gif)
 
 
@@ -13,9 +15,9 @@ This lab exercise uses a notebook in Data Science Experience to connect with das
 # Step 2. Select the Default Project
 # Step 3. Add a notebook from URL
 
-- Specify notebook name: DSX_IA_Lab
+- Notebook name: DSX_IA_Lab
 - Notebook URL: https://raw.githubusercontent.com/edong186/ml/master/ml101/part1/DSX_IA_Lab.ipynb
-- Use the default Spark instance "DSX-Spark"
+- Default Spark instance "DSX-Spark"
 
 # Step 4. Run the notebook
 
