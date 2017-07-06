@@ -28,4 +28,4 @@ This lab exercise uses a notebook in Data Science Experience to connect with das
 --- 
 #### End of Lab
 
-##### [Next Steps: Build your next Spark Analytics project using IBM Data Science Experience.](https://github.com/edong186/ml/blob/master/ml101/part2)
+##### [Next Steps: Create Resolution](https://github.com/edong186/ml/blob/master/ml101/part2)
