@@ -1,6 +1,6 @@
 # Data Scientist 
 
-# Part 1 - Root Cause Analysis
+# Exercise 1 - Root Cause Analysis
 
 [<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E1.png">](https://github.com/edong186/ml/blob/master/ml101/part1/)
 
@@ -26,6 +26,5 @@ This lab exercise uses a notebook in Data Science Experience to connect with das
 > Pixiedust is an open source visualization package developed by IBM labs. You can visualize SparkSQL data frames with a single API call and interactively access raw data, pick visual options and stow data away to files or IBM Cloudant or Object Storage.
 
 --- 
-#### End of Lab
 
 ##### [Next Steps: Create Resolution](https://github.com/edong186/ml/blob/master/ml101/part2)
