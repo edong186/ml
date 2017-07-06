@@ -56,9 +56,8 @@
         
         -   RStudio-apriori-demo-installation.R – R code for installing software packages for the machine learning lab (association rules)
 
-2.  Login to your IBM DSX account at:  <http://datascience.ibm.com/>
 
-3.  A quick outline of the procedures:
+2.  A quick outline of the procedures:
 
     a.  Decision tree lab (based on the DSX notebooks):
 
@@ -110,7 +109,9 @@
 
 ## Step 1. Adding a data asset
 
-1. Open the Default Project
+1. Login to DSX <http://datascience.ibm.com/>
+
+2. Open the Default Project
 
 2. Click "add data assets", and add "tranactions.csv" to the assets of the project.
 > Note: File "tranactions.csv" is located at "Lab-DSX-ML\data"
