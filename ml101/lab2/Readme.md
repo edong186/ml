@@ -173,7 +173,7 @@
 >NOTE: the software packages installation may take a few minutes, but it
 >needs to be done only once per account
 
-## Step 6. Running Decision Tree Lab 
+## Step 7. Running Decision Tree Lab 
 
 1.  Open “machine-learning-with-DSX-lab” notebook in the Edit Mode
 
@@ -249,7 +249,7 @@
 
 8.   Quit the current session and start the new one (see the supporting images in the item 3 above)
 
-#Step 10. Running Association Rules Lab 
+## Step 10. Running Association Rules Lab 
 
 1.  Click on the name of the file RStudio-apriori-demo.R: RStudio will open the source code
 
