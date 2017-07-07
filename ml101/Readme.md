@@ -26,7 +26,7 @@ DSX brings together the data science development experience accumulated in R, Py
 
 
 
-## Step 2. Perform Hands-on exercise
+## Step 2. Perform Hands-on exercises
 
 ### [Exercise 1. Root cause analysis using DSX and Python notebook](https://github.com/edong186/ml/blob/master/ml101/lab1/)
 This lab exercise uses a notebook in DSX to connect with dashDB, explores sales, product data and analyze sales performance for a specific product line. Pixiedust, a Python based visualization package is used to visualize the results.
