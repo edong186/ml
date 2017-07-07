@@ -22,13 +22,13 @@ This lab we will explore how a data scientist utilizes DSX and IBM Bluemix cloud
     
     <img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Decision-Tree-Lab-Flow.jpg">
     
-3. Outlines of the procedure
+3. **Outlines of the procedure**
 
-1) Provision an Object Storage service and load a file with sales data (transactions.csv) for the analysis
-2) Provision an Apache Spark service to run notebooks on
-3) Load the sample notebooks with the lab (machine-learning-with-DSX-lab.ipynb) and the installation of the software packages (ml-lab-installation.ipynb) needed for the lab;
-4) Run the code in the notebook with the installation sequence
-5) Run the code in the notebook with the lab
+- Provision an Object Storage service and load a file with sales data (transactions.csv) for the analysis
+- Provision an Apache Spark service to run notebooks on
+- Load the sample notebooks with the lab (machine-learning-with-DSX-lab.ipynb) and the installation of the software packages (ml-lab-installation.ipynb) needed for the lab;
+- Run the code in the notebook with the installation sequence
+- Run the code in the notebook with the lab
 
 ## Lab environment setup 
 
