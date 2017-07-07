@@ -2,15 +2,8 @@
 # Exercise 2 - Create Resolution
 [<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E2.png">](https://github.com/edong186/ml/blob/master/ml101/lab2/)
 
- In this lab we will explore how a data scientist utilizes DSX and IBM
- Bluemix cloud services to easily analyze data using machine learning
- techniques and to visualize the outcomes using DSX, R, and Brunel. For
- the lab, we have chosen two algorithms to demonstrate supervised and
- unsupervised machine learning in DSX. Decision tree-based
- classification is one of the domains that allowed scientists to have
- direct insights into the reasoning behind classification choices.
- Association rules algorithms support market basket analysis.
-
+This lab we will explore how a data scientist utilizes DSX and IBM Bluemix cloud services to easily analyze data using machine learning techniques and to visualize the outcomes using DSX, R, and Brunel. This lab uses descision tree classification. Decision tree-based classification is one of the domains that allowed scientists to have direct insights into the reasoning behind classification choices.
+ 
  The lab shows how to use these machine learning algorithms for
  uncovering the data insights in sales data.
 
@@ -24,72 +17,31 @@
 > issue for this lab, we will be using sample datasets hosted in the IBM
 > Object Storage that would be used as a source data set.
 
-2.  **Exploring sales data** (for this lab, the data from IBM sample DB “GOSALES” was used):
+2.  **Exploring sales data using Decision Tree, DSX Notebooks, Brunel, R** (for this lab, the data from IBM sample DB “GOSALES” was used):
 
-    a.  **Using Decision Tree**: **DSX Notebooks**, **Brunel**, **R** 
     
     <img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Decision-Tree-Lab-Flow.jpg">
     
-    
-    b.  **Using Association Rules**: **DSX RStudio** 
-    
-    <img src="https://raw.githubusercontent.com/edong186/ml/master/ml101/lab2/doc/media/Association-Rules-Lab-Flow.jpg">
-    
+3. Outlines of the procedure
+
+1) Provision an Object Storage service and load a file with sales data (transactions.csv) for the analysis
+2) Provision an Apache Spark service to run notebooks on
+3) Load the sample notebooks with the lab (machine-learning-with-DSX-lab.ipynb) and the installation of the software packages (ml-lab-installation.ipynb) needed for the lab;
+4) Run the code in the notebook with the installation sequence
+5) Run the code in the notebook with the lab
 
 ## Lab environment setup 
 
-1.  Download Lab-DSX-ML.zip archive from the github.com location below and extract the data file (transactions.csv) to your laptop:
+Download Lab-DSX-ML.zip archive from the github.com location below and extract the data file (transactions.csv) to your local machine:
 
     > <https://github.com/edong186/ml/tree/master/ml101/lab2/archive>
     
     Here is the content of the downloaded archive:
     
-    -   Folder “data” contains the sample data “transactions.csv”
-    
-    -   Folder “lab” contains the following files:
-    
-        -   machine-learning-with-DSX-lab.ipynb – the notebook for the machine learning lab using decision trees;
-        
-        -   ml-lab-installation.ipynb – the notebook for installing software packages for the machine learning lab (decision trees) ;
-        
-        -   RStudio-apriori-demo.R – R code for the machine learning lab using association rules;
-        
-        -   RStudio-apriori-demo-installation.R – R code for installing software packages for the machine learning lab (association rules)
-
-
-2.  A quick outline of the procedures:
-
-    a.  Decision tree lab (based on the DSX notebooks):
-
-        i.  Provision an Object Storage service and load a file with
-            sales data (transactions.csv) for the analysis
-
-        ii. Provision an Apache Spark service to run notebooks on
-
-        iii. Load the sample notebooks with the
-            lab (machine-learning-with-DSX-lab.ipynb) and the
-            installation of the software
-            packages (ml-lab-installation.ipynb) needed for the lab;
-
-        iv. Run the code in the notebook with the installation sequence
-
-        v.  Run the code in the notebook with the lab
-
-    b.  Association rules lab (based on RStudio):
-
-        i.  Start RStudio
-
-        ii. Load the data file into RStudio (transactions.csv
-            into ~/data)
-
-        iii. Load the R-code with the lab (RStudio-apriori-demo.R) and
-            the installation R-code for the software
-            packages (RStudio-apriori-demo-installation.R) needed for
-            the lab
-
-        iv. Run the R-code with the installation sequence
-
-        v.  Run the R-code with the lab
+    -   data/transactions.csv
+    -   labs/machine-learning-with-DSX-lab.ipynb : the notebook for the machine learning lab using decision trees;
+    -   labs/ml-lab-installation.ipynb : the notebook for installing software packages for the machine learning lab (decision trees) 
+             
 
 > NOTE: If the same environment is sequentially used by different users,
 > then the installation procedure needs to be done once per environment
@@ -104,8 +56,6 @@
 > submenu list, and finally “Final Item” in the yet another opened menu
 > list.
 
-
-# Decision Tree
 
 ## Step 1. Adding a data asset
 
@@ -199,74 +149,3 @@
 
 
 ## End of Decision Tree
-
-# Start Association Rules
-
-## Step 7. Association Rules Lab Installation
-
-1. On the DSX home page, navigate to Tools > RStudio
-
-
-## Step 8. Importing Source Code and Data for Machine Learning Lab in RStudio
-
-1.  In “Files” tab use “New folder” to create 2 folders in the user’s home directory - data and demo (please do not mix it with the “File” menu item in the main menu and locate “Files” in the frame depicted here):
-> ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-Files-tab.jpg)
-
-2.  Using “Upload” button upload transactions.csv into the data folder and RStudio-apriori-demo-installation.R, RStudio-apriori-demo.R into the demo folder
-
-
-## Step 9. Installing Software Libraries and Packages
-
-1.  Double-click on the name of the file RStudio-apriori-demo-installation.R: RStudio will open the source code:
- > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-Source-code.jpg)
-
-2.  Rename ~/.Rprofile to ~/old.Rprofile: check the file .Rprofile and click "Rename", change the name to old.Rprofile
- > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Renaming-rprofile.png)
-
-3.  Quit the current session and start the new one:
-
-    a. Select Session>Quit Session:
-    
- > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Session-menu.png)
- 
-    b. Select "Don't Save": 
-    
- > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Quitting-R-session.png)
-
-    c. After the old session has been finished, start a new session:
-    
- > ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/Starting-a-new-R-session.png)
-    
-4.  Run the code in RStudio-apriori-demo-installation.R using the Run button ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-running-source-code.png): please decline the options to update any packages while installing the new packages
-
-5.  Check point: ensure that all packages install without errors
-
-6.  Close the source code editor window for RStudio-apriori-demo-installation.R
-
- >NOTE: the software packages installation may take a few minutes, but it  
- >needs to be done only once per account
-7.  Rename ~/old.Rprofile back to ~/.Rprofile (see the supporting images in the item 2 above)
-
-8.   Quit the current session and start the new one (see the supporting images in the item 3 above)
-
-## Step 10. Running Association Rules Lab 
-
-1.  Click on the name of the file RStudio-apriori-demo.R: RStudio will open the source code
-
-2.  Execute every code section in the order in which the sections appear by clicking on the button ![](https://github.com/edong186/ml/blob/master/ml101/lab2/doc/media/RStudio-running-source-code.png) . The lab covers the following actions:
-
-    a.  Declaring the libraries used in the lab
-
-    b.  Loading the sales data into a data frame
-
-    c.  Data wrangling with R: transforming data to the form required by arules package for Apriori algorithm
-
-    d.  Applying Apriori algorithm
-
-    e.  Reviewing the generated rules in the console window
-
-    f.  Visualizing the rules with arulesViz package
-
-3.  \[Optional step\] Quit RStudio
-
-***End of Lab: Association Rules***
