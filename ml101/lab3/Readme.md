@@ -1,5 +1,8 @@
 
 # Exercise 3 - Create resolution using DSX and RStudio with associate rules
+
+This lab we will explore how a data scientist utilizes DSX and RStudio to easily analyze data using Association rules algorithms and to visualize the outcomes. Association rules algorithms support market basket analysis.
+
 [<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E2.png">](https://github.com/edong186/ml/blob/master/ml101/lab2/)
 
  
