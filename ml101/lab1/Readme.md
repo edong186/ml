@@ -27,4 +27,4 @@ This lab exercise uses a notebook in Data Science Experience to connect with das
 
 --- 
 
-# [Next Steps: Create Resolution](https://github.com/edong186/ml/blob/master/ml101/lab2)
+## [Next](https://github.com/edong186/ml/blob/master/ml101/lab2)
