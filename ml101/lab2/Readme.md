@@ -1,5 +1,5 @@
 
-# Exercise 2 - Create Resolution
+# Exercise 2 - Create resolution using DSX and R notebook with descision trees
 [<img src="https://github.com/edong186/ml/blob/master/ml101/media/DSE2E2.png">](https://github.com/edong186/ml/blob/master/ml101/lab2/)
 
 This lab we will explore how a data scientist utilizes DSX and IBM Bluemix cloud services to easily analyze data using machine learning techniques and to visualize the outcomes using DSX, R, and Brunel. This lab uses descision tree classification. Decision tree-based classification is one of the domains that allowed scientists to have direct insights into the reasoning behind classification choices.
